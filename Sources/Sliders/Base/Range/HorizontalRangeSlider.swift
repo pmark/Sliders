@@ -93,7 +93,7 @@ public struct HorizontalRangeSlider<V, TrackView: View, LowerThumbView: View, Up
                     ),
                     y: geometry.size.height / 2
                 )
-                .gesture(
+                .highPriorityGesture(
                     DragGesture()
                         .onChanged { gestureValue in
                             if self.dragOffset == nil {
